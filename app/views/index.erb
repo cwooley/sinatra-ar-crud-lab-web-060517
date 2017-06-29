@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Posts</title>
+  </head>
+  <body>
+    <% Post.all.each do |post| %>
+      <h1><%= post.name %></h1>
+      <p><%= post.content %></h1>
+      <p> <a href="#">Edit</a> | <a href="#">Delete</a>
+    <% end %>
+    <p><a href="/posts/new">New Post</a>
+  </body>
+</html>
